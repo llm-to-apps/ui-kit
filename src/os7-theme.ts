@@ -15,6 +15,7 @@ import {
 } from '@mantine/core';
 
 export const os7Theme = createTheme({
+  activeClassName: '',
   colors: {
     os7: [
       '#f2f5fb',
