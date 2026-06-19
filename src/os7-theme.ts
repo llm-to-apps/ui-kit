@@ -1,17 +1,29 @@
 import {
   ActionIcon,
+  Alert,
   Badge,
   Button,
   Card,
   Checkbox,
+  CloseButton,
+  ColorInput,
   createTheme,
+  Input,
   Modal,
+  Menu,
   NavLink,
+  NumberInput,
+  Paper,
   PasswordInput,
+  Select,
+  SegmentedControl,
+  Switch,
+  Table,
   Textarea,
   TextInput,
   ThemeIcon
-} from '@mantine/core';
+} from '@mantine/core'
+import { DateInput } from '@mantine/dates'
 
 export const os7Theme = createTheme({
   activeClassName: '',
@@ -32,8 +44,7 @@ export const os7Theme = createTheme({
   primaryColor: 'os7',
   primaryShade: 8,
   defaultRadius: 'md',
-  fontFamily:
-    '-apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif',
+  fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif',
   headings: {
     fontFamily:
       '-apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif',
@@ -44,6 +55,11 @@ export const os7Theme = createTheme({
       defaultProps: {
         radius: 'md',
         size: 'lg'
+      }
+    }),
+    Alert: Alert.extend({
+      defaultProps: {
+        radius: 'md'
       }
     }),
     Badge: Badge.extend({
@@ -72,6 +88,35 @@ export const os7Theme = createTheme({
         size: 'md'
       }
     }),
+    CloseButton: CloseButton.extend({
+      defaultProps: {
+        radius: 'md'
+      }
+    }),
+    ColorInput: ColorInput.extend({
+      defaultProps: {
+        radius: 'md',
+        size: 'md'
+      }
+    }),
+    DateInput: DateInput.extend({
+      defaultProps: {
+        radius: 'md',
+        size: 'md',
+        valueFormat: 'MMM D, YYYY'
+      }
+    }),
+    Input: Input.extend({
+      defaultProps: {
+        radius: 'md',
+        size: 'md'
+      }
+    }),
+    Menu: Menu.extend({
+      defaultProps: {
+        shadow: 'md'
+      }
+    }),
     Modal: Modal.extend({
       defaultProps: {
         centered: true,
@@ -97,6 +142,40 @@ export const os7Theme = createTheme({
         size: 'md'
       }
     }),
+    NumberInput: NumberInput.extend({
+      defaultProps: {
+        radius: 'md',
+        size: 'md'
+      }
+    }),
+    Paper: Paper.extend({
+      defaultProps: {
+        radius: 'md'
+      }
+    }),
+    Select: Select.extend({
+      defaultProps: {
+        radius: 'md',
+        size: 'md'
+      }
+    }),
+    SegmentedControl: SegmentedControl.extend({
+      defaultProps: {
+        color: 'os7',
+        radius: 'md',
+        size: 'md'
+      }
+    }),
+    Switch: Switch.extend({
+      defaultProps: {
+        color: 'os7'
+      }
+    }),
+    Table: Table.extend({
+      defaultProps: {
+        fz: 'md'
+      }
+    }),
     Textarea: Textarea.extend({
       defaultProps: {
         autosize: true,
@@ -118,4 +197,4 @@ export const os7Theme = createTheme({
       }
     })
   }
-});
+})
