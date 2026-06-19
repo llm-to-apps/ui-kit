@@ -8,7 +8,6 @@ import {
   Modal,
   NavLink,
   PasswordInput,
-  Text,
   Textarea,
   TextInput,
   ThemeIcon
@@ -84,6 +83,9 @@ export const os7Theme = createTheme({
         variant: 'light'
       },
       styles: {
+        label: {
+          fontSize: 'inherit'
+        },
         root: {
           borderRadius: 'var(--mantine-radius-md)'
         }
@@ -93,11 +95,6 @@ export const os7Theme = createTheme({
       defaultProps: {
         radius: 'md',
         size: 'md'
-      }
-    }),
-    Text: Text.extend({
-      defaultProps: {
-        size: 'sm'
       }
     }),
     Textarea: Textarea.extend({
