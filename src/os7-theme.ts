@@ -22,8 +22,8 @@ import {
   Textarea,
   TextInput,
   ThemeIcon
-} from '@mantine/core'
-import { DateInput } from '@mantine/dates'
+} from '@mantine/core';
+import { DateInput } from '@mantine/dates';
 
 export const os7Theme = createTheme({
   activeClassName: '',
@@ -44,7 +44,8 @@ export const os7Theme = createTheme({
   primaryColor: 'os7',
   primaryShade: 8,
   defaultRadius: 'md',
-  fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif',
+  fontFamily:
+    '-apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif',
   headings: {
     fontFamily:
       '-apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif',
@@ -197,4 +198,4 @@ export const os7Theme = createTheme({
       }
     })
   }
-})
+});
