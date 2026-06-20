@@ -1,6 +1,7 @@
 import {
   ActionIcon,
   Alert,
+  Autocomplete,
   Badge,
   Button,
   Card,
@@ -61,6 +62,12 @@ export const os7Theme = createTheme({
     Alert: Alert.extend({
       defaultProps: {
         radius: 'md'
+      }
+    }),
+    Autocomplete: Autocomplete.extend({
+      defaultProps: {
+        radius: 'md',
+        size: 'md'
       }
     }),
     Badge: Badge.extend({
